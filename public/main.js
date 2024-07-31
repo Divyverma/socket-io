@@ -4,7 +4,7 @@ const socket = io();
 const totalClients = document.getElementById('client-total')
 socket.on('clients-total', (data) => {
     console.log("total clients", data);
-    totalClients.innerHTML = `Total Mems: ${data}`
+    totalClients.innerHTML = `Online Mems: ${data}`
 
 })
 
